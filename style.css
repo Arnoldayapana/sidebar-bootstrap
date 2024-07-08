@@ -41,7 +41,7 @@ body {
     min-width: 70px;
     z-index: 1000;
     transition: all .25s ease-in-out;
-    background-color: #0e2238;
+    background-color: #003c3c;
     display: flex;
     flex-direction: column;
 }
@@ -55,26 +55,36 @@ body {
     background-color: transparent;
     cursor: pointer;
     border: 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem .7rem;
 }
 
 .toggle-btn i {
     font-size: 1.5rem;
     color: #FFF;
 }
+#sideheader{
+    padding-top: 30px;
+}
 
 .sidebar-logo {
     margin: auto 0;
 }
+.toggle-btn img {
+    height: 50px;
+    width: 50px;
+    border-radius: 5%;
+}
 
 .sidebar-logo a {
     color: #FFF;
-    font-size: 1.15rem;
+    font-size: 1.7rem;
     font-weight: 600;
+    
 }
 
 #sidebar:not(.expand) .sidebar-logo,
-#sidebar:not(.expand) a.sidebar-link span {
+#sidebar:not(.expand) a.sidebar-link span,
+#sidebar:not(.expand) .sidebar-link p {
     display: none;
 }
 
@@ -99,18 +109,25 @@ a.sidebar-link {
 
 a.sidebar-link:hover {
     background-color: rgba(255, 255, 255, .075);
-    border-left: 3px solid #3b7ddd;
+    border-left: 3px solid #8a73ff;
 }
 
 .sidebar-item {
     position: relative;
+}
+.sidebar-link p{
+    color: #214eff;
+    font-size: 0.9rem;
+    margin-left: 15px;
+    padding-top: 10px;
+
 }
 
 #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #0e2238;
+    background-color: #28c3ea;
     padding: 0;
     min-width: 15rem;
     display: none;
